@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'dev.eidos.common'
+group = 'dev.eidos'
 version = '1.0.0'
 
 repositories {
@@ -24,6 +24,18 @@ publishing {
         mavenJava(MavenPublication) {
             from components.java
             artifactId = 'eidos-common'
+        }
+    }
+
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/DiegoCordova7/eidos-common")
+
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+            }
         }
     }
 }
