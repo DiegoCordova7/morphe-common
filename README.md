@@ -68,7 +68,7 @@ Gradle dependency:
 
 ```gradle
 dependencies {
-    implementation 'dev.eidos:morphe-common:1.0.0'
+    implementation 'dev.morphe:morphe-common:1.0.0'
 }
 ```
 ---
