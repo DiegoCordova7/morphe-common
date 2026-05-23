@@ -5,7 +5,7 @@ package dev.morphe.common.exception;
  *
  * <p>
  * {@code MorpheException} represents the root unchecked exception
- * type shared across the Eidos ecosystem, including:
+ * type shared across the Morphe ecosystem, including:
  * </p>
  *
  * <ul>
