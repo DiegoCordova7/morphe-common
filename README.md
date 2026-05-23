@@ -1,17 +1,17 @@
-# Eidos Common
+# Morphé Common
 
-Shared core utilities and abstractions used across the Eidos ecosystem.
+Shared core utilities and abstractions used across the Morphé ecosystem.
 
 ## Overview
 
-`eidos-common` provides foundational shared components used by multiple Eidos projects.
+`morphe-common` provides foundational shared components used by multiple Morphé projects.
 
 This module exists to centralize truly common functionality and avoid unnecessary coupling between independent systems such as:
 
-- Eidos VM
-- Eidos Language
-- Eidos API
-- Eidos IDE
+- Morphé VM
+- Morphé Language
+- Morphé API
+- Morphé IDE
 
 The project is intentionally lightweight and focused on cross-module contracts.
 
@@ -21,16 +21,16 @@ The project is intentionally lightweight and focused on cross-module contracts.
 
 ### Exception System
 
-#### `EidosException`
+#### `MorpheException`
 
-Base unchecked exception for all Eidos-related errors.
+Base unchecked exception for all Morphé-related errors.
 
 This class acts as the root exception type shared across the entire ecosystem.
 
 Example hierarchy:
 
 ```text
-EidosException
+MorpheException
 ├── VMException
 ├── LangException
 │   ├── LexerException
@@ -68,15 +68,15 @@ Gradle dependency:
 
 ```gradle
 dependencies {
-    implementation 'dev.eidos:eidos-common:1.0.0'
+    implementation 'dev.eidos:morphe-common:1.0.0'
 }
 ```
 ---
 ## Philosophy
 
-`eidos-common` should remain minimal.
+`morphe-common` should remain minimal.
 
-Only abstractions genuinely shared across multiple Eidos modules belong here.
+Only abstractions genuinely shared across multiple Morphé modules belong here.
 
 Examples include:
 
@@ -89,10 +89,10 @@ Runtime-specific or language-specific logic should remain in their respective pr
 
 ---
 
-## Part of the Eidos Ecosystem
+## Part of the Morphé Ecosystem
 
-- Eidos Common
-- Eidos VM
-- Eidos Language
-- Eidos API
-- Eidos IDE
+- Morphé Common
+- Morphé VM
+- Morphé Language
+- Morphé API
+- Morphé IDE

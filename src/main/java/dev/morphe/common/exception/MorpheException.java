@@ -1,10 +1,10 @@
-package dev.eidos.common.exception;
+package dev.morphe.common.exception;
 
 /**
- * Base exception for all Eidos-related errors.
+ * Base exception for all Morphe-related errors.
  *
  * <p>
- * {@code EidosException} represents the root unchecked exception
+ * {@code MorpheException} represents the root unchecked exception
  * type shared across the Eidos ecosystem, including:
  * </p>
  *
@@ -19,32 +19,32 @@ package dev.eidos.common.exception;
  * <p>
  * Specialized exception hierarchies such as VM or language-specific
  * exceptions should extend this class to provide a unified error model
- * across all Eidos modules.
+ * across all Morphe modules.
  * </p>
  *
  * <p>
- * This exception extends {@link RuntimeException}, making all Eidos
+ * This exception extends {@link RuntimeException}, making all Morphe
  * exceptions unchecked by default.
  * </p>
  */
-public abstract class EidosException extends RuntimeException {
+public abstract class MorpheException extends RuntimeException {
 
   /**
-   * Creates a new Eidos exception with the given message.
+   * Creates a new Morphe exception with the given message.
    *
    * @param message the error description
    */
-  protected EidosException(String message) {
+  protected MorpheException(String message) {
     super(message);
   }
 
   /**
-   * Creates a new Eidos exception with the given message and root cause.
+   * Creates a new Morphe exception with the given message and root cause.
    *
    * @param message the error description
    * @param cause the original exception cause
    */
-  protected EidosException(String message, Throwable cause) {
+  protected MorpheException(String message, Throwable cause) {
     super(message, cause);
   }
 }
